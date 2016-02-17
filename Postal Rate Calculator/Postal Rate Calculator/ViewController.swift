@@ -40,6 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if (heightTextBox.text! == "") {
             print("height is empty")
         }
+        
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool { // return NO to not change text

@@ -10,27 +10,17 @@ import XCTest
 @testable import Postal_Rate_Calculator
 
 class Postal_Rate_CalculatorTests: XCTestCase {
+    var rateComputer: RateComputer?
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+        rateComputer = RateComputer()
     }
     
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let result = rateComputer?.computePostalRate(0.2, height: 11, depth: 4.2, weight: 154.1)
+        XCTAssert(result == 0)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
