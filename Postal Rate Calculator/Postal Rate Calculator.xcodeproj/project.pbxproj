@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAFAF4BF1C7432EE004F389F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF4BE1C7432EE004F389F /* AppDelegate.swift */; };
+		AAFAF4C11C7432EE004F389F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF4C01C7432EE004F389F /* ViewController.swift */; };
+		AAFAF4C41C7432EE004F389F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFAF4C21C7432EE004F389F /* Main.storyboard */; };
+		AAFAF4C61C7432EF004F389F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFAF4C51C7432EF004F389F /* Assets.xcassets */; };
+		AAFAF4C91C7432EF004F389F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFAF4C71C7432EF004F389F /* LaunchScreen.storyboard */; };
+		AAFAF4D41C7432EF004F389F /* Postal_Rate_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF4D31C7432EF004F389F /* Postal_Rate_CalculatorTests.swift */; };
+		AAFAF4DF1C7432EF004F389F /* Postal_Rate_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF4DE1C7432EF004F389F /* Postal_Rate_CalculatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAFAF4D01C7432EF004F389F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAFAF4B31C7432EE004F389F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAFAF4BA1C7432EE004F389F;
+			remoteInfo = "Postal Rate Calculator";
+		};
+		AAFAF4DB1C7432EF004F389F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAFAF4B31C7432EE004F389F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAFAF4BA1C7432EE004F389F;
+			remoteInfo = "Postal Rate Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAFAF4BB1C7432EE004F389F /* Postal Rate Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Postal Rate Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFAF4BE1C7432EE004F389F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAFAF4C01C7432EE004F389F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAFAF4C31C7432EE004F389F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAFAF4C51C7432EF004F389F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAFAF4C81C7432EF004F389F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAFAF4CA1C7432EF004F389F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAFAF4CF1C7432EF004F389F /* Postal Rate CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Postal Rate CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFAF4D31C7432EF004F389F /* Postal_Rate_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postal_Rate_CalculatorTests.swift; sourceTree = "<group>"; };
+		AAFAF4D51C7432EF004F389F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAFAF4DA1C7432EF004F389F /* Postal Rate CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Postal Rate CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFAF4DE1C7432EF004F389F /* Postal_Rate_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postal_Rate_CalculatorUITests.swift; sourceTree = "<group>"; };
+		AAFAF4E01C7432EF004F389F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAFAF4B81C7432EE004F389F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFAF4CC1C7432EF004F389F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFAF4D71C7432EF004F389F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAFAF4B21C7432EE004F389F = {
+			isa = PBXGroup;
+			children = (
+				AAFAF4BD1C7432EE004F389F /* Postal Rate Calculator */,
+				AAFAF4D21C7432EF004F389F /* Postal Rate CalculatorTests */,
+				AAFAF4DD1C7432EF004F389F /* Postal Rate CalculatorUITests */,
+				AAFAF4BC1C7432EE004F389F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAFAF4BC1C7432EE004F389F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAFAF4BB1C7432EE004F389F /* Postal Rate Calculator.app */,
+				AAFAF4CF1C7432EF004F389F /* Postal Rate CalculatorTests.xctest */,
+				AAFAF4DA1C7432EF004F389F /* Postal Rate CalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAFAF4BD1C7432EE004F389F /* Postal Rate Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				AAFAF4BE1C7432EE004F389F /* AppDelegate.swift */,
+				AAFAF4C01C7432EE004F389F /* ViewController.swift */,
+				AAFAF4C21C7432EE004F389F /* Main.storyboard */,
+				AAFAF4C51C7432EF004F389F /* Assets.xcassets */,
+				AAFAF4C71C7432EF004F389F /* LaunchScreen.storyboard */,
+				AAFAF4CA1C7432EF004F389F /* Info.plist */,
+			);
+			path = "Postal Rate Calculator";
+			sourceTree = "<group>";
+		};
+		AAFAF4D21C7432EF004F389F /* Postal Rate CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAFAF4D31C7432EF004F389F /* Postal_Rate_CalculatorTests.swift */,
+				AAFAF4D51C7432EF004F389F /* Info.plist */,
+			);
+			path = "Postal Rate CalculatorTests";
+			sourceTree = "<group>";
+		};
+		AAFAF4DD1C7432EF004F389F /* Postal Rate CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAFAF4DE1C7432EF004F389F /* Postal_Rate_CalculatorUITests.swift */,
+				AAFAF4E01C7432EF004F389F /* Info.plist */,
+			);
+			path = "Postal Rate CalculatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAFAF4BA1C7432EE004F389F /* Postal Rate Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAFAF4E31C7432EF004F389F /* Build configuration list for PBXNativeTarget "Postal Rate Calculator" */;
+			buildPhases = (
+				AAFAF4B71C7432EE004F389F /* Sources */,
+				AAFAF4B81C7432EE004F389F /* Frameworks */,
+				AAFAF4B91C7432EE004F389F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Postal Rate Calculator";
+			productName = "Postal Rate Calculator";
+			productReference = AAFAF4BB1C7432EE004F389F /* Postal Rate Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAFAF4CE1C7432EF004F389F /* Postal Rate CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAFAF4E61C7432EF004F389F /* Build configuration list for PBXNativeTarget "Postal Rate CalculatorTests" */;
+			buildPhases = (
+				AAFAF4CB1C7432EF004F389F /* Sources */,
+				AAFAF4CC1C7432EF004F389F /* Frameworks */,
+				AAFAF4CD1C7432EF004F389F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAFAF4D11C7432EF004F389F /* PBXTargetDependency */,
+			);
+			name = "Postal Rate CalculatorTests";
+			productName = "Postal Rate CalculatorTests";
+			productReference = AAFAF4CF1C7432EF004F389F /* Postal Rate CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAFAF4D91C7432EF004F389F /* Postal Rate CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAFAF4E91C7432EF004F389F /* Build configuration list for PBXNativeTarget "Postal Rate CalculatorUITests" */;
+			buildPhases = (
+				AAFAF4D61C7432EF004F389F /* Sources */,
+				AAFAF4D71C7432EF004F389F /* Frameworks */,
+				AAFAF4D81C7432EF004F389F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAFAF4DC1C7432EF004F389F /* PBXTargetDependency */,
+			);
+			name = "Postal Rate CalculatorUITests";
+			productName = "Postal Rate CalculatorUITests";
+			productReference = AAFAF4DA1C7432EF004F389F /* Postal Rate CalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAFAF4B31C7432EE004F389F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = zexception;
+				TargetAttributes = {
+					AAFAF4BA1C7432EE004F389F = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					AAFAF4CE1C7432EF004F389F = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = AAFAF4BA1C7432EE004F389F;
+					};
+					AAFAF4D91C7432EF004F389F = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = AAFAF4BA1C7432EE004F389F;
+					};
+				};
+			};
+			buildConfigurationList = AAFAF4B61C7432EE004F389F /* Build configuration list for PBXProject "Postal Rate Calculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAFAF4B21C7432EE004F389F;
+			productRefGroup = AAFAF4BC1C7432EE004F389F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAFAF4BA1C7432EE004F389F /* Postal Rate Calculator */,
+				AAFAF4CE1C7432EF004F389F /* Postal Rate CalculatorTests */,
+				AAFAF4D91C7432EF004F389F /* Postal Rate CalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAFAF4B91C7432EE004F389F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFAF4C91C7432EF004F389F /* LaunchScreen.storyboard in Resources */,
+				AAFAF4C61C7432EF004F389F /* Assets.xcassets in Resources */,
+				AAFAF4C41C7432EE004F389F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFAF4CD1C7432EF004F389F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFAF4D81C7432EF004F389F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAFAF4B71C7432EE004F389F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFAF4C11C7432EE004F389F /* ViewController.swift in Sources */,
+				AAFAF4BF1C7432EE004F389F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFAF4CB1C7432EF004F389F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFAF4D41C7432EF004F389F /* Postal_Rate_CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAFAF4D61C7432EF004F389F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFAF4DF1C7432EF004F389F /* Postal_Rate_CalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAFAF4D11C7432EF004F389F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAFAF4BA1C7432EE004F389F /* Postal Rate Calculator */;
+			targetProxy = AAFAF4D01C7432EF004F389F /* PBXContainerItemProxy */;
+		};
+		AAFAF4DC1C7432EF004F389F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAFAF4BA1C7432EE004F389F /* Postal Rate Calculator */;
+			targetProxy = AAFAF4DB1C7432EF004F389F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAFAF4C21C7432EE004F389F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAFAF4C31C7432EE004F389F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAFAF4C71C7432EF004F389F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAFAF4C81C7432EF004F389F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAFAF4E11C7432EF004F389F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAFAF4E21C7432EF004F389F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAFAF4E41C7432EF004F389F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Postal Rate Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zexception.Postal-Rate-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AAFAF4E51C7432EF004F389F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Postal Rate Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zexception.Postal-Rate-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AAFAF4E71C7432EF004F389F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Postal Rate CalculatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zexception.Postal-Rate-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Postal Rate Calculator.app/Postal Rate Calculator";
+			};
+			name = Debug;
+		};
+		AAFAF4E81C7432EF004F389F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Postal Rate CalculatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zexception.Postal-Rate-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Postal Rate Calculator.app/Postal Rate Calculator";
+			};
+			name = Release;
+		};
+		AAFAF4EA1C7432EF004F389F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Postal Rate CalculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zexception.Postal-Rate-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Postal Rate Calculator";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AAFAF4EB1C7432EF004F389F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Postal Rate CalculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zexception.Postal-Rate-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Postal Rate Calculator";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAFAF4B61C7432EE004F389F /* Build configuration list for PBXProject "Postal Rate Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFAF4E11C7432EF004F389F /* Debug */,
+				AAFAF4E21C7432EF004F389F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAFAF4E31C7432EF004F389F /* Build configuration list for PBXNativeTarget "Postal Rate Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFAF4E41C7432EF004F389F /* Debug */,
+				AAFAF4E51C7432EF004F389F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AAFAF4E61C7432EF004F389F /* Build configuration list for PBXNativeTarget "Postal Rate CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFAF4E71C7432EF004F389F /* Debug */,
+				AAFAF4E81C7432EF004F389F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AAFAF4E91C7432EF004F389F /* Build configuration list for PBXNativeTarget "Postal Rate CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFAF4EA1C7432EF004F389F /* Debug */,
+				AAFAF4EB1C7432EF004F389F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAFAF4B31C7432EE004F389F /* Project object */;
+}
