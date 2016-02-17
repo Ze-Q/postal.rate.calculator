@@ -9,7 +9,11 @@
 import Foundation
 
 class RateComputer {
-    func computePostalRate(width: Double, height: Double, depth: Double, weight: Double) -> Double {
-        return 0.0
+    func computePostalRate(width: Double, height: Double, depth: Double, weight: Double)
+        -> (cost: Double, errorMessage: String) {
+            if (weight <= 30) {
+                return (1.0, "")
+            }
+        return (0.0, "")
     }
 }

@@ -17,10 +17,14 @@ class Postal_Rate_CalculatorTests: XCTestCase {
         rateComputer = RateComputer()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let result = rateComputer?.computePostalRate(0.2, height: 11, depth: 4.2, weight: 154.1)
-        XCTAssert(result == 0)
+    func test1StandardMailUnder30g() {
+        //exercise function under test
+        let result = rateComputer!.computePostalRate(140, height: 90, depth: 0.18, weight: 5)
+        
+        //check the expected output
+        XCTAssert(result.cost == 1.0)
+        
+        //make sure there is no error message
+        XCTAssert(result.errorMessage == "")
     }
 }
