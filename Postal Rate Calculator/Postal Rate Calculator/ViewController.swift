@@ -11,10 +11,15 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var computeButton: UIButton!
+    
     @IBOutlet weak var widthTextBox: UITextField!
     @IBOutlet weak var heightTextBox: UITextField!
     @IBOutlet weak var depthTextBox: UITextField!
     @IBOutlet weak var weightTextBox: UITextField!
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    var rateComputer: RateComputer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +29,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.heightTextBox.delegate = self
         self.depthTextBox.delegate = self
         self.weightTextBox.delegate = self
+        
+        rateComputer = RateComputer()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,15 +39,33 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func computeButtonIsPressed(sender: AnyObject) {
-        print(widthTextBox.text!)
-        print(heightTextBox.text!)
-        print(depthTextBox.text!)
-        print(weightTextBox.text!)
+//        print(widthTextBox.text!)
+//        print(heightTextBox.text!)
+//        print(depthTextBox.text!)
+//        print(weightTextBox.text!)
         
-        if (heightTextBox.text! == "") {
-            print("height is empty")
+        if (widthTextBox.text! == "") {
+            resultLabel.text = "Please enter a width"
+        } else if (heightTextBox.text! == "") {
+            resultLabel.text = "Please enter a height"
+        } else if (depthTextBox.text! == "") {
+            resultLabel.text = "Please enter a depth"
+        } else if (weightTextBox.text! == "") {
+            resultLabel.text = "Please enter a weight"
+        } else {
+            let widthValue = Double(widthTextBox.text!)
+            let heightValue = Double(heightTextBox.text!)
+            let depthValue = Double(depthTextBox.text!)
+            let weightValue = Double(weightTextBox.text!)
+            
+            let result = (rateComputer?.computePostalRate(widthValue!, height: heightValue!, depth: depthValue!, weight: weightValue!))!
+            
+            if (result.errorMessage == "") { //no error, the computation was successful
+                resultLabel.text = "Cost: $" + String(result.cost)
+            } else { //error, the computation failed
+                resultLabel.text = result.errorMessage
+            }
         }
-        
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool { // return NO to not change text

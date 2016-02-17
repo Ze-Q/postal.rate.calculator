@@ -92,20 +92,15 @@
                                             <action selector="computeButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nd1-F9-8Ki"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="POe-q7-70Y">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="POe-q7-70Y">
                                         <rect key="frame" x="0.0" y="290" width="560" height="58"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRF-8v-Fhy">
-                                                <rect key="frame" x="0.0" y="19" width="48" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWC-dM-Gkl">
+                                                <rect key="frame" x="0.0" y="19" width="560" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q2K-1U-QQl">
-                                                <rect key="frame" x="68" y="14" width="492" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bR-mQ-wng">
@@ -135,6 +130,7 @@
                         <outlet property="computeButton" destination="MSf-ns-Mjy" id="Pjq-RN-egh"/>
                         <outlet property="depthTextBox" destination="nZw-ov-mF6" id="Rqp-cn-16P"/>
                         <outlet property="heightTextBox" destination="HfF-aG-nsi" id="YJv-xK-T4b"/>
+                        <outlet property="resultLabel" destination="rWC-dM-Gkl" id="vGt-FD-CTA"/>
                         <outlet property="weightTextBox" destination="Z9P-LT-hNp" id="j7o-kz-Iln"/>
                         <outlet property="widthTextBox" destination="S0m-qT-8Ds" id="HGO-sH-4Na"/>
                     </connections>
