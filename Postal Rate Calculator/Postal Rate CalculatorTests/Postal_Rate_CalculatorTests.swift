@@ -302,4 +302,5 @@ class Postal_Rate_CalculatorTests: XCTestCase {
         
         XCTAssert(result.errorMessage == "")
     }
+    
 }
