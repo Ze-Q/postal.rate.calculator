@@ -303,4 +303,67 @@ class Postal_Rate_CalculatorTests: XCTestCase {
         XCTAssert(result.errorMessage == "")
     }
     
+    // ======== width that is out of range
+    
+    func test31WidthOutOfRange() {
+        let result = rateComputer!.computePostalRate(139, height: 90, depth: 0.18, weight: 5)
+
+        XCTAssert(result.errorMessage == "ERROR: width is not in valid range (140-380)")
+    }
+    
+    func test32WidthOutOfRange() {
+        let result = rateComputer!.computePostalRate(381, height: 90, depth: 0.18, weight: 5)
+        
+        XCTAssert(result.errorMessage == "ERROR: width is not in valid range (140-380)")
+    }
+
+    // ======== height that is out of range
+    
+    func test33HeightOutOfRange() {
+        let result = rateComputer!.computePostalRate(245, height: 89, depth: 5, weight: 45)
+        
+        XCTAssert(result.errorMessage == "ERROR: height is not in valid range (90-270)")
+    }
+    
+    func test34HeightOutOfRange() {
+        let result = rateComputer!.computePostalRate(380, height: 271, depth: 5, weight: 45)
+        
+        XCTAssert(result.errorMessage == "ERROR: height is not in valid range (90-270)")
+    }
+    
+    // ======== depth that is out of range
+    
+    func test35DepthOutOfRange() {
+        let result = rateComputer!.computePostalRate(245, height: 156, depth: 0.17, weight: 45)
+        
+        XCTAssert(result.errorMessage == "ERROR: depth is not in valid range (0.18-20)")
+    }
+    
+    func test36DepthOutOfRange() {
+        let result = rateComputer!.computePostalRate(245, height: 156, depth: 21, weight: 45)
+        
+        XCTAssert(result.errorMessage == "ERROR: depth is not in valid range (0.18-20)")
+    }
+    
+    // ======== weight that is out of range
+    
+    func test37WeightOutOfRange() {
+        let result = rateComputer!.computePostalRate(245, height: 156, depth: 5, weight: 0)
+        
+        XCTAssert(result.errorMessage == "ERROR: weight cannot be 0g.")
+    }
+    
+    func test38WeightOutOfRange() {
+        let result = rateComputer!.computePostalRate(245, height: 156, depth: 5, weight: 501)
+        
+        XCTAssert(result.errorMessage == "ERROR: weight has to be lower than 500g.")
+    }
+    
+    // ======== width is shorter than height
+    
+    func test39WidthShorterThanHeight() {
+        let result = rateComputer!.computePostalRate(245, height: 250, depth: 5, weight: 50)
+        
+        XCTAssert(result.errorMessage == "ERROR: width should be longer than height.")
+    }
 }

@@ -11,20 +11,17 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var computeButton: UIButton!
+    @IBOutlet weak var resultLabel: UILabel!
     
     @IBOutlet weak var widthTextBox: UITextField!
     @IBOutlet weak var heightTextBox: UITextField!
     @IBOutlet weak var depthTextBox: UITextField!
     @IBOutlet weak var weightTextBox: UITextField!
     
-    @IBOutlet weak var resultLabel: UILabel!
-    
     var rateComputer: RateComputer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // process the input to text fields so that user can only put in valid numbers
         self.widthTextBox.delegate = self
         self.heightTextBox.delegate = self
         self.depthTextBox.delegate = self
@@ -39,19 +36,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func computeButtonIsPressed(sender: AnyObject) {
-//        print(widthTextBox.text!)
-//        print(heightTextBox.text!)
-//        print(depthTextBox.text!)
-//        print(weightTextBox.text!)
-        
         if (widthTextBox.text! == "") {
-            resultLabel.text = "Please enter a width"
+            resultLabel.text = "Error, width cannot be empty."
         } else if (heightTextBox.text! == "") {
-            resultLabel.text = "Please enter a height"
+            resultLabel.text = "Error, height cannot be empty."
         } else if (depthTextBox.text! == "") {
-            resultLabel.text = "Please enter a depth"
+            resultLabel.text = "Error, depth cannot be empty."
         } else if (weightTextBox.text! == "") {
-            resultLabel.text = "Please enter a weight"
+            resultLabel.text = "Error, weight cannot be empty."
         } else {
             let widthValue = Double(widthTextBox.text!)
             let heightValue = Double(heightTextBox.text!)
